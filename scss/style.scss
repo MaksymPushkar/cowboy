@@ -1,1 +1,49 @@
 @use "_reset.scss";
+
+body {
+	font-family: "inter", sans-serif;
+	background: #e6dac0;
+
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 1.5;
+	color: #000;
+}
+
+[class*="__container"] {
+	max-width: 1800px;
+	padding: 0 16px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 26px 0;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 8px 16px;
+	}
+	&__logo {
+	}
+
+	&__nav {
+		display: flex;
+		gap: 8px 50px;
+		padding-bottom: 6px;
+	}
+	&__item-nav {
+		font-weight: 400;
+		font-size: 19px;
+	}
+	&__btn {
+		border: 0.61px solid #000;
+		border-radius: 161px;
+		padding: 11px 50px;
+
+		font-weight: 400;
+		font-size: 19px;
+		text-align: center;
+	}
+}

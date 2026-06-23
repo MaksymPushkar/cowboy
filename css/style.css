@@ -81,3 +81,53 @@ textarea {
 label {
   display: block;
 }
+
+body {
+  font-family: "inter", sans-serif;
+  background: #e6dac0;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #000;
+}
+
+[class*=__container] {
+  max-width: 1800px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 26px 0;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px 16px;
+}
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px 50px;
+  padding-bottom: 6px;
+}
+.header__item-nav {
+  font-weight: 400;
+  font-size: 19px;
+}
+.header__btn {
+  border: 0.61px solid #000;
+  border-radius: 161px;
+  padding: 11px 50px;
+  font-weight: 400;
+  font-size: 19px;
+  text-align: center;
+}
