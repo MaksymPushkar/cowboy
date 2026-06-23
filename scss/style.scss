@@ -10,6 +10,15 @@ body {
 	color: #000;
 }
 
+.body {
+	display: flex;
+	flex-direction: column;
+
+	> main {
+		flex: 1 1 auto;
+	}
+}
+
 [class*="__container"] {
 	max-width: 1800px;
 	padding: 0 16px;
@@ -23,17 +32,18 @@ body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		gap: 8px 16px;
+		gap: 8px 50px;
 	}
 	&__logo {
 	}
 
 	&__nav {
 		display: flex;
-		gap: 8px 50px;
+		gap: 8px 26px;
 		padding-bottom: 6px;
 	}
 	&__item-nav {
+		padding: 8px 12px;
 		font-weight: 400;
 		font-size: 19px;
 	}
@@ -41,6 +51,32 @@ body {
 		border: 0.61px solid #000;
 		border-radius: 161px;
 		padding: 11px 50px;
+
+		font-weight: 400;
+		font-size: 19px;
+		text-align: center;
+	}
+}
+
+.footer {
+	padding: 26px 0;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 16px 0;
+	}
+	&__logo {
+	}
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 0.61px solid #000;
+		border-radius: 161px;
+		width: 52px;
+		height: 52px;
 
 		font-weight: 400;
 		font-size: 19px;
